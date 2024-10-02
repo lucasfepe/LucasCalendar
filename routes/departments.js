@@ -5,7 +5,7 @@ const departmentController = require('../controllers/department.js');
 const { isAuthenticated } = require('../middleware/authenticate.js')
 
 router.get('/', departmentController.getAllDepartments);
-
+//hi
 router.get('/:id', departmentController.getSingleDepartment);
 router.post('/',isAuthenticated,validation.department, departmentController.createDepartment);
 router.put('/:id',isAuthenticated,validation.department, departmentController.updateDepartment);
