@@ -1,8 +1,8 @@
 const mongodb = require('../data/database');
 const ObjectId = require('mongodb').ObjectId;
 
-const DATABASE = "PROJECT2";
-const COLLECTION_NAME = "Department";
+const DATABASE = "Calendar";
+const COLLECTION_NAME = "Event";
 
 const getAllDepartments = async (req, res) => {
   const result = await mongodb

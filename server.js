@@ -14,7 +14,7 @@ app.use(bodyParser.json())
 .use(session({
   secret: "secret",
   resave: false,
-  saveUnititialized: true
+  saveUninitialized: true
 }))
 .use(passport.initialize())
 .use(passport.session())
